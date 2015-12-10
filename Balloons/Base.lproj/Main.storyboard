@@ -98,11 +98,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="j9f-Pi-VRe">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKq-ya-lXo">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Page 2"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="260" y="385" width="48" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="bWh-J4-OUh" kind="show" id="lrl-9w-Fcb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mov-xy-63V">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Page 3"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="260" y="629" width="48" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="rG6-Tq-2VX" kind="show" id="75V-3n-Ssk"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaq-zL-g4I">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Page 1"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="261" y="186" width="46" height="30"/>
+                                    <rect key="frame" x="261" y="191" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="faZ-QZ-Ox9" kind="show" id="W8D-1H-5hY"/>
@@ -119,6 +139,8 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="j9f-Pi-VRe"/>
+                                <exclude reference="XKq-ya-lXo"/>
+                                <exclude reference="mov-xy-63V"/>
                                 <exclude reference="Vaq-zL-g4I"/>
                             </mask>
                             <mask key="constraints">
@@ -131,6 +153,8 @@
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="j9f-Pi-VRe"/>
+                                <include reference="XKq-ya-lXo"/>
+                                <include reference="mov-xy-63V"/>
                                 <include reference="Vaq-zL-g4I"/>
                             </mask>
                             <mask key="constraints">
@@ -144,6 +168,8 @@
                     <connections>
                         <outlet property="imgTwo" destination="j9f-Pi-VRe" id="ci2-TG-gWC"/>
                         <outlet property="page1Button" destination="Vaq-zL-g4I" id="h4g-Xv-LfA"/>
+                        <outlet property="page2Button" destination="XKq-ya-lXo" id="bXF-ba-fS0"/>
+                        <outlet property="page3Button" destination="mov-xy-63V" id="h88-iV-6Iv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clr-7H-ZNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
